@@ -18,8 +18,8 @@ void main(){
 print("-------------------");
 
   Students st2 = Students();
-  print("student 2 name = ${st2.name='Famiya'}");
+  print("student 2 name = ${st2.name='Family'}");
   print("student 2 age = ${st2.age=15}");
   print ("student 2 email = ${st2.email='famiyyyar@gmail.com'}");
-  print ("students 2 qualification =${st2.qualification='bcom'}");
+  print ("students 2 qualification =${st2.qualification='com'}");
 }

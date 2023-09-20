@@ -3,7 +3,7 @@ void main(){
   int age = 21;
   int phone = 7782872666;
   double cgpa = 8.9;
-  String email = faris@gmail.com;
+  String email = faris;
   print('my name is $name');
   print('i am $age years old');
   print('my phone number is $phone');
