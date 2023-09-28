@@ -19,8 +19,9 @@ void main() {
         if(list[i]>largestlist){largestlist = list[i];
 
       }
-        print('largest value in list': $largestlist);
+        print({'largest': $largestlist});
     }
+
 
     }
     }
