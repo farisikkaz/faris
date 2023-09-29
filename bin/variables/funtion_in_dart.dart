@@ -1,4 +1,4 @@
-void main(){
+void main(){ 
 func1();
 print(func2());
 // or String n = func2();
