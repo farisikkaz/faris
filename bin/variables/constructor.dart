@@ -4,7 +4,7 @@ class A {
   }
 
 //   A(int a, String b){
-//     print('parametrried construvtor');
+//     print('parameteried construvtor');
 //
 //   }
 // }
