@@ -1,28 +1,35 @@
 import 'funtion_in_dart.dart';
 
 void main(){
+  func(10, 100);
+  func1(10);
   func2('hello',b: 20,a: 'faris',i: 8.9);
 func3('hey', b: 70,a: "gege",i: 6.6);
 func4('hellyeah', c: 2.9,a: 'faris');
-college5('faris', gpa: 7.7);
+college5('faris',age: 65, mark:90);
 
 
 
 }
+
 /// normal parameterised function
 void func(int a,int b){
   print("a = $a");
   print('b = $b');
 
 }
-
-
-
-
-
-
-
-
+/// optional positional
+/// parameters inside[] is optional
+/// optional parameters should created using ?
+/// when we pass values to the optional parameters we must follow the order
+/// we cannot skip values eg: if we need value of 'a' not s and 'i' we cannot write like this func1(10,10)- shows error
+/// we should write like this func1(10,'data,10,2.5)
+void func1(int x,[String? s,int? a,double? i]){
+  print('x =$x');
+  print('a = $a');
+  print('s=$s');
+  print('i = $i');
+}
 
 /// optional named parameterised function with null aware
 void func2(String s, {String? a , int? b, double? i}){
@@ -46,14 +53,14 @@ void func4(String s, {String? a ,  int b =202020, required double? c}){
   print('c = $c');
 
   }
-void college5 (String name,{int? age , int? mark, required double? gpa}){
+void college5 (String name,{int? age ,required int mark,  double? gpa}){
 print('name =$name');
 print('age = $age');
-print('gpa = $gpa');
+print('mark = $mark');
 if(gpa ==null) {
-  print('mark =no value');
+  print('gpa = no value');
 }else{
-  print('mark = $mark');
+  print('gpa = $gpa');
 
     }
 }

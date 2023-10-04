@@ -3,11 +3,9 @@ class A {
     print('default constructor');
   }
 
-//   A(int a, String b){
-//     print('parameteried construvtor');
-//
-//   }
-// }
+  // A(int a, String b){
+  // print('parameteried constructor');}
+//}
   A.name1(){
     print('default named constructor');
   }
@@ -16,14 +14,27 @@ class A {
     print('default named  constructor with parameter $a,$b');
   }
 
-  A.a2(String s, {String? name, int? age, int? year,}){
+  A.name3(String s, {String? name, int? age, int? year,}){
     print('name = $name');
     print('age = $age');
     print('year =$year');
-
   }
-  void main(){
+  A.name4(String s,{required String name,int? age = 20,int? gpa}){
+    print('inst =$s');
+    print('name = $name');
+    print('age =$age');
+    if(gpa==null){
+      print('gpa = no value');
+    }
+    else{
+      print('gpa = $gpa');
+    }
+  }
+}
+void main(){
   A obj1 =A();
   A obj2 =A.name1();
-  A obj3 =A.name2(100, 'faris');
-  A.a2('pepole',name: 'faris',age:0,year: 2002 );}
+  A obj3 = A.name2(20, 'faris');
+  A obj4 = A.name3('home',name: 'faris',year: 20,age: 21);
+  A obj5 = A.name4('ihrd',name: 'faris',age: 20);
+}
