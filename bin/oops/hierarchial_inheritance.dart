@@ -25,6 +25,6 @@ void main (){
   Benz obj1 = Benz();
   print('I am looking for a car ${obj1.model}');
 
-  print(obj.details{'balck', 'v80', 'automatic', 2020});
+  print(obj.details{'black', 'v80', 'automatic', 2020});
   print(obj1.details{'white', 'x88', 'manual', 2022});
 }
