@@ -21,10 +21,10 @@ class Benz extends Cars {
 void main (){
   Bmw obj= Bmw();
   print(' I am looking for a car ${obj.model}');
+  obj.details('Black', 'V12', 'Automatic', 2022);
 
   Benz obj1 = Benz();
   print('I am looking for a car ${obj1.model}');
 
-  print(obj.details{'black', 'v80', 'automatic', 2020});
-  print(obj1.details{'white', 'x88', 'manual', 2022});
+
 }
