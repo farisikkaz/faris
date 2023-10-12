@@ -22,7 +22,6 @@ void main (){
   Bmw obj= Bmw();
   print(' I am looking for a car ${obj.model}');
   obj.details('Black', 'V12', 'Automatic', 2022);
-
   Benz obj1 = Benz();
   print('I am looking for a car ${obj1.model}');
 

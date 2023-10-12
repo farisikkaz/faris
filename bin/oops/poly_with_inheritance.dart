@@ -10,6 +10,7 @@ class Maruti extends Bike {
     print('engine = $engine');
     print('transmission= $transmission');
     print('year = $year');
+    print('model = ${super.model}');
   }
 }
 class Rodeo extends Bike{
@@ -17,6 +18,9 @@ class Rodeo extends Bike{
 
   @override
   void details(String color, String engine, String transmission, int year){
-
+    print('color = $color');
+    print('engine = $engine');
+    print('transmission= $transmission');
+    print('year = $year');
   }
 }

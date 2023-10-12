@@ -18,6 +18,7 @@ class Chidx extends X {
   @override
   void display1() {
     print('overiderd display method from claa A1');
+
   }
 }
 void main (){
